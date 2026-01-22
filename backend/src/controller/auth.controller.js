@@ -4,6 +4,14 @@ const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/AppError");
 const { generateToken, verifyToken } = require("../utils/jwtHelper");
 
+// cookie options helper
+const cookieOptions = {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+  maxAge: 7 * 24 * 60 * 60 * 1000,
+};
+
 exports.signUp = catchAsync(async (req, res, next) => {
   const { name, email, password, confirmPassword, amount } = req.body;
 
@@ -42,12 +50,7 @@ exports.signUp = catchAsync(async (req, res, next) => {
   }
 
   // 5. Set cookie
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
-    maxAge: 7 * 24 * 60 * 60 * 1000,
-  });
+  res.cookie("token", token, cookieOptions);
   // 6. Remove sensitive fields
   newUser.password = undefined;
 
@@ -74,12 +77,7 @@ exports.logIn = catchAsync(async (req, res, next) => {
 
   let token = generateToken(user._id);
 
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
-    maxAge: 7 * 24 * 60 * 60 * 1000,
-  });
+  res.cookie("token", token, cookieOptions);
 
   user.password = undefined;
 

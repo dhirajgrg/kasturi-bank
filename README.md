@@ -1,10 +1,29 @@
-#Reference : This project UI is taken and inspire from Jonas Schmedtmann who is a instructor from portugal and i develope backend  and some frontend logic to make it full-stack project.
-
+#Reference : This project UI is taken and inspire from Jonas Schmedtmann who is a instructor from portugal and i develope backend and some frontend logic to make it full-stack project.
 
 # Kasturi Bank (Demo)
+
 project overview
 
+## Demo Preview
 
+- Demo video:
+
+  <video controls width="720">
+    <source src="frontend/images/bank-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+- Preview images:
+
+  <p>
+    <img src="frontend/images/desktop-dashboard.png" alt="Desktop dashboard" width="350" />
+    <img src="frontend/images/desktop-home.png" alt="Desktop home" width="350" />
+  </p>
+
+  <p>
+    <img src="frontend/images/mobile-dashboard.png" alt="Mobile dashboard" width="180" />
+    <img src="frontend/images/mobile-home.png" alt="Mobile home" width="180" />
+  </p>
 
 Small demo banking app with Node/Express backend and static frontend.
 

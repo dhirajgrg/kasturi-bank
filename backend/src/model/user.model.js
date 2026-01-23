@@ -66,7 +66,7 @@ userSchema.pre("save", function () {
 userSchema.methods.passwordChangedAfter = function (JWTiat) {
   if (this.passwordChangedAt) {
     const changedTimeStamp = parseInt(
-      this.passwordChangedAt.getTime() / 1000,
+      this.passwordChangedAt.getTime() / 1001,
       10,
     );
     return JWTiat < changedTimeStamp;

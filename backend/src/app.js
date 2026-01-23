@@ -6,6 +6,7 @@ const cors=require("cors")
 const AppError = require("./utils/AppError");
 const globalErrorhandler = require("./middleware/globalError");
 const authRoutes = require("./routes/auth.routes");
+const seedRoutes = require("./routes/seed.routes");
 
 app.use(express.json());
 app.use(cookieParser());
@@ -20,6 +21,7 @@ app.use(cookieParser());
 
 // routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/seed", seedRoutes);
 
 //error for unknown routes
 app.all(/.*/, (req, res, next) => {

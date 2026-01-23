@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kasturi Bank | Modern Digital Banking</title>
+    <link
+      rel="shortcut icon"
+      href="images/logo/shape-30.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <img
+            src="images/logo/shape-30.png"
+            alt="lasturi logo"
+            class="main-nav__logo-img"
+            id="main-logo"
+          />
+          <h1>Kasturi Bank</h1>
+        </div>
+        <ul class="main-nav__menu hidden">
+          <li class="hamburger-close">&times;</li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#features">Features</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#services">Services</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a
+              class="main-nav__menu-link main-nav__menu-link--cta btn--register"
+              href="#login__page"
+            >
+              Register Now
+            </a>
+          </li>
+        </ul>
+        <button class="hamburger">
+          <p>&#9776;</p>
+        </button>
+      </nav>
+
+      <div class="hero">
+        <h1 class="hero__title">
+          <span class="hero__title--accent">Banking</span>
+          for the digital<br />
+          <span class="hero__title--accent">generation</span>
+        </h1>
+        <h4 class="hero__subtitle">Experience banking without boundaries.</h4>
+        <button class="btn btn--explore">Explore Features &darr;</button>
+        <img
+          src="images/moneyplant.jpg"
+          class="hero__image"
+          alt="Digital banking interface"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="features">
+      <div class="section__container">
+        <h2 class="section__tag">Features</h2>
+        <h3 class="section__title">
+          Banking that works around your lifestyle.
+        </h3>
+      </div>
+      <div class="feature-grid">
+        <img
+          src="images/digital-lazy.jpg"
+          data-src="images/digital.jpg"
+          alt="Mobile banking interface"
+          class="feature-grid__image image--lazy mobile-banking"
+        />
+        <div class="feature-grid__item">
+          <div class="feature-grid__icon">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="feature-grid__title">Mobile-First Banking</h5>
+          <p class="feature-grid__description">
+            Manage your finances anytime, anywhere with our award-winning mobile
+            app. Send money instantly, track expenses, and control your cards
+            with a tap.
+          </p>
+        </div>
+
+        <div class="feature-grid__item">
+          <div class="feature-grid__icon">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="feature-grid__title">Smart Investments</h5>
+          <p class="feature-grid__description">
+            Start investing with as little as $1. Access stocks, ETFs, and
+            crypto with real-time insights and automated portfolio management.
+          </p>
+        </div>
+        <img
+          data-src="images/plant.jpg"
+          src="images/plant-lazy.jpg"
+          alt="Investment dashboard"
+          class="feature-grid__image image--lazy"
+        />
+
+        <img
+          data-src="images/atm.jpg"
+          src="images/atm-lazy.jpg"
+          alt="Contactless payment"
+          class="feature-grid__image image--lazy"
+        />
+        <div class="feature-grid__item">
+          <div class="feature-grid__icon">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="feature-grid__title">Next-Gen Payments</h5>
+          <p class="feature-grid__description">
+            Enjoy contactless payments, virtual cards, and integration with
+            Apple Pay and Google Pay. Plus, get real-time notifications for all
+            transactions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section__container">
+        <h2 class="section__tag">Services</h2>
+        <h3 class="section__title">
+          Smart solutions for your financial needs.
+        </h3>
+      </div>
+
+      <div class="services">
+        <div class="services__tabs">
+          <button class="btn services__tab services__tab--active" data-tab="1">
+            <span>01</span>Money Transfers
+          </button>
+          <button class="btn services__tab" data-tab="2">
+            <span>02</span>Personal Loans
+          </button>
+          <button class="btn services__tab" data-tab="3">
+            <span>03</span>Savings Goals
+          </button>
+        </div>
+
+        <div
+          class="services__content services__content-1 services__content--active"
+        >
+          <div class="services__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(0,0,0,1)"
+            >
+              <path
+                d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9V15H10V9H5L12 2L19 9H14Z"
+              ></path>
+            </svg>
+          </div>
+          <h5 class="services__title">Lightning-fast transfers worldwide</h5>
+          <p class="services__description">
+            Send money globally with zero fees and real-time exchange rates.
+            Support for 30+ currencies and instant transfers between NeoBank
+            accounts.
+          </p>
+        </div>
+        <div class="services__content services__content-2">
+          <div class="services__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(0,0,0,1)"
+            >
+              <path
+                d="M9.3349 11.5023L11.5049 11.5028C13.9902 11.5028 16.0049 13.5175 16.0049 16.0028H9.00388L9.00488 17.0028L17.0049 17.002V16.0028C17.0049 14.9204 16.6867 13.8997 16.1188 13.002L19.0049 13.0028C20.9972 13.0028 22.7173 14.1681 23.521 15.8542C21.1562 18.9748 17.3268 21.0028 13.0049 21.0028C10.2436 21.0028 7.90445 20.4122 6.00456 19.378L6.00592 10.0738C7.25147 10.2522 8.39122 10.7585 9.3349 11.5023ZM5.00488 19.0028C5.00488 19.5551 4.55717 20.0028 4.00488 20.0028H2.00488C1.4526 20.0028 1.00488 19.5551 1.00488 19.0028V10.0028C1.00488 9.45052 1.4526 9.00281 2.00488 9.00281H4.00488C4.55717 9.00281 5.00488 9.45052 5.00488 10.0028V19.0028ZM18.0049 5.00281C19.6617 5.00281 21.0049 6.34595 21.0049 8.00281C21.0049 9.65966 19.6617 11.0028 18.0049 11.0028C16.348 11.0028 15.0049 9.65966 15.0049 8.00281C15.0049 6.34595 16.348 5.00281 18.0049 5.00281ZM11.0049 2.00281C12.6617 2.00281 14.0049 3.34595 14.0049 5.00281C14.0049 6.65966 12.6617 8.00281 11.0049 8.00281C9.34803 8.00281 8.00488 6.65966 8.00488 5.00281C8.00488 3.34595 9.34803 2.00281 11.0049 2.00281Z"
+              ></path>
+            </svg>
+          </div>
+          <h5 class="services__title">Manage Your Personal Finances</h5>
+          <p class="services__description">
+            Track your spending and income, categorize your transactions, and
+            set personalized budgets to achieve your financial goals.
+          </p>
+        </div>
+
+        <!-- Saving Goals Section -->
+        <div class="services__content services__content-3">
+          <div class="services__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(0,0,0,1)"
+            >
+              <path
+                d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z"
+              ></path>
+            </svg>
+          </div>
+          <h5 class="services__title">Set and Achieve Saving Goals</h5>
+          <p class="services__description">
+            Easily set up saving goals for emergencies, vacations, or large
+            purchases, and watch your progress towards achieving them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section__container">
+        <h2 class="section__tag">Reviews</h2>
+        <h3 class="section__title">
+          Join thousands of satisfied customers worldwide.
+        </h3>
+      </div>
+
+      <div class="review-slider">
+        <!-- Slide 1 -->
+        <div class="review-slider__slide">
+          <div class="review">
+            <h5 class="review__title">Game-changing banking experience!</h5>
+            <blockquote class="review__text">
+              NeoBank has transformed how I manage my money. The app is
+              intuitive, transfers are instant, and the investment features are
+              perfect for beginners like me. The customer service is outstanding
+              too!
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="images/user-1.jpg"
+                alt="Sarah Chen"
+                class="review__photo"
+              />
+              <h6 class="review__name">Sarah Chen</h6>
+              <p class="review__location">Singapore</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="review-slider__slide">
+          <div class="review">
+            <h5 class="review__title">Excellent Customer Service!</h5>
+            <blockquote class="review__text">
+              The support team at NeoBank is phenomenal. I had a query regarding
+              a transaction, and they resolved it promptly with great care.
+              Highly recommend their services!
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="images/user-2.jpg"
+                alt="James Smith"
+                class="review__photo"
+              />
+              <h6 class="review__name">James Smith</h6>
+              <p class="review__location">USA</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="review-slider__slide">
+          <div class="review">
+            <h5 class="review__title">A Truly Revolutionary Platform!</h5>
+            <blockquote class="review__text">
+              I love how easy it is to manage my investments on NeoBank. The
+              app's features allow me to make informed decisions quickly and
+              easily. A must-have for anyone serious about managing their
+              finances!
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="images/user-3.jpg"
+                alt="Emma Johnson"
+                class="review__photo"
+              />
+              <h6 class="review__name">Emma Johnson</h6>
+              <p class="review__location">UK</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="review-slider__btn review-slider__btn--prev">
+          &larr;
+        </button>
+        <button class="review-slider__btn review-slider__btn--next">
+          &rarr;
+        </button>
+
+        <!-- Dots Navigation -->
+        <div class="review-slider__dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="section__container">
+        <h3 class="section__title">
+          Start your financial journey today with Kasturi Bank!
+        </h3>
+      </div>
+      <button class="btn btn--primary btn--register">
+        Open your free account
+      </button>
+    </section>
+
+    <footer class="main-footer">
+      <ul class="main-footer__nav">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">About Us</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Features</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Security</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Privacy</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Careers</a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">Help Center</a>
+        </li>
+      </ul>
+      <div class="main-footer__logo">
+        <img
+          src="images/logo/shape-30.png"
+          alt="Logo"
+          class="main-footer__logo-img"
+        />
+        <h1>Kasturi Bank</h1>
+      </div>
+      <p class="main-footer__copyright">
+        &copy; 2025 Kasturi Bank. All rights reserved.
+      </p>
+    </footer>
+
+    <div class="error-container error-hidden">
+      <div class="error-icon">⚠️</div>
+      <h2 class="error-title">Something went wrong,</h2>
+      <p class="error-text">error happen</p>
+      <button class="btn btn--retry">Try Again</button>
+    </div>
+
+    <div class="modal modal--hidden" role="dialog" aria-modal="true">
+      <button class="modal__close">&times;</button>
+      <h2 class="modal__title">
+        <span class="modal__title-register"
+          >Open your account <br />in just
+          <span class="modal__highlight">3 minutes</span></span
+        >
+        <span class="modal__title-login" style="display: none"
+          >Sign in to your account</span
+        >
+      </h2>
+
+      <!-- Register Form -->
+      <form class="modal__form modal__register" autocomplete="off">
+        <label>Name</label>
+        <input id="reg-name" class="login__input" type="text" required />
+        <label>Email Address</label>
+        <input id="reg-email" class="login__input" type="email" required />
+        <label>password</label>
+        <input
+          id="reg-password"
+          class="login__input"
+          type="password"
+          required
+        />
+        <label>confirm password</label>
+        <input
+          id="reg-confirmPassword"
+          class="login__input"
+          type="password"
+          required
+        />
+        <button class="btn btn--primary">Sign Up</button>
+        <p class>
+          Already registered?
+          <a class="modal__toggle-login">Sign in</a>
+        </p>
+      </form>
+
+      <!-- Login Form (hidden by default) -->
+      <form
+        id="login__page"
+        class="modal__form modal__login"
+        style="display: none"
+        autocomplete="off"
+      >
+        <label>Email</label>
+        <input
+          id="lg-email"
+          type="email"
+          placeholder="you@example.com"
+          class="login__input login__input--email"
+        />
+        <label>Password</label>
+        <input
+          id="lg-password"
+          type="password"
+          placeholder="password"
+          class="login__input login__input--password"
+        />
+        <button class="btn btn--primary login__btn">Sign In &rarr;</button>
+        <p class>
+          Not registered?
+          <a href="#" class="modal__toggle-register">Create account</a>
+        </p>
+      </form>
+    </div>
+    <div class="overlay overlay--hidden"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
